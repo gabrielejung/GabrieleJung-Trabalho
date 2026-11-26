@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="escocia, turismo, viagem">
+    <title>Escócia</title>
+
+    <!-- bootstrap local -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- meu css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- MENU + LOGO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="../img/logo.svg" alt="Logo" height="35" class="me-2">ESCÓCIA
+            </a>
+
+            <!-- botão que aparece no celular -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lugares">Lugares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CARROSSEL -->
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/castelo-eilean.jpg" class="d-block w-100" alt="castelo de Eilean Donan à noite">
+                <div class="carousel-caption">
+                    <h2>ESCÓCIA</h2>
+                    <p>Saiba tudo sobre esse país maravilhoso.</p>
+                    <a href="#sobre" class="btn btn-verde">Saiba mais</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/lago-ness.jpg" class="d-block w-100" alt="Lago Ness">
+                <div class="carousel-caption">
+                    <h2>Lago Ness</h2>
+                    <p>O lago mais famoso do mundo e lar de lendas.</p>
+                    <a href="#lago" class="btn btn-verde">Ver lugar</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/circulo-brodgar.jpg" class="d-block w-100" alt="Círculo de Brodgar">
+                <div class="carousel-caption">
+                    <h2>Círculo de Brodgar</h2>
+                    <p>Um monumento histórico cercado de mistérios antigos.</p>
+                    <a href="#circulo" class="btn btn-verde">Ver lugar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- setinhas -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="container my-5">
+
+        <!-- SOBRE (texto com efeito de aparecer e abas com fade) -->
+        <section id="sobre" class="mb-5 aparecer">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-3">
+                    <img src="../img/fundo.jpg" class="img-fluid rounded foto-sobre w-100" alt="castelo na Escócia">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="titulo">Sobre a Escócia</h2>
+
+                    <ul class="nav nav-tabs mb-3">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pais" type="button">O país</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#visitar" type="button">Por que visitar</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="pais">
+                            <p>A Escócia é um país maravilhoso, cheio de castelos, lagos e montanhas. Aqui você vai conhecer alguns dos lugares mais famosos de lá.</p>
+                        </div>
+                        <div class="tab-pane fade" id="visitar">
+                            <p>Tem paisagens lindas, história muito antiga e até lendas, como a do monstro do Lago Ness. Dá uma olhada nos lugares abaixo!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARDS -->
+        <section id="lugares" class="mb-5">
+            <h2 class="titulo text-center mb-4">Lugares para conhecer</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col" id="lago">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../img/lago-ness.jpg" class="card-img-top" alt="Lago Ness">
+                        <div class="card-body">
+                            <h3 class="h5 titulo">Lago Ness</h3>
+                            <p class="fw-bold small">O lago mais famoso do mundo e lar de lendas.</p>
+                            <p class="card-text">O Lago Ness é um grande lago de água doce localizado nas Terras Altas da Escócia. Ele é mundialmente conhecido pelos supostos avistamentos do Monstro do Lago Ness, carinhosamente chamado de "Nessie". Além do mistério, o lugar possui paisagens naturais incríveis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" id="castelo">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../img/castelo-eilean.jpg" class="card-img-top" alt="Castelo de Eilean Donan">
+                        <div class="card-body">
+                            <h3 class="h5 titulo">Castelo de Eilean Donan</h3>
+                            <p class="fw-bold small">Um dos castelos mais bonitos e fotografados da Escócia.</p>
+                            <p class="card-text">Este castelo fortificado do século XIII fica localizado em uma pequena ilha onde três grandes lagos marítimos se encontram. Ele foi destruído em rebeliões no passado, mas foi totalmente reconstruído e hoje funciona como um dos principais pontos turísticos do país.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" id="circulo">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../img/circulo-brodgar.jpg" class="card-img-top" alt="Círculo de Brodgar">
+                        <div class="card-body">
+                            <h3 class="h5 titulo">Círculo de Brodgar</h3>
+                            <p class="fw-bold small">Um monumento histórico cercado de mistérios antigos.</p>
+                            <p class="card-text">O Círculo de Brodgar é um enorme anel de pedras neolíticas erguidas há milhares de anos. Ele fica localizado nas ilhas Orkney e é mais antigo que as pirâmides do Egito. O local é considerado um Patrimônio Mundial da UNESCO.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section id="contato" class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <h2 class="titulo text-center">Contato</h2>
+                    <p class="text-center">Quer saber mais sobre a Escócia? Manda uma mensagem!</p>
+
+                    <form id="formContato" class="bg-white p-4 rounded shadow-sm needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required minlength="3">
+                            <div class="invalid-feedback">Digite seu nome (mínimo 3 letras).</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                            <div class="invalid-feedback">Digite um email válido.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lugar" class="form-label">Lugar de interesse</label>
+                            <select class="form-select" id="lugar" required>
+                                <option value="">Escolha...</option>
+                                <option>Lago Ness</option><option>Castelo de Eilean Donan</option><option>Círculo de Brodgar</option>
+                            </select>
+                            <div class="invalid-feedback">Escolha um lugar.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required minlength="10"></textarea>
+                            <div class="invalid-feedback">Escreva pelo menos 10 letras.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-verde w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- MODAL DE SUCESSO -->
+    <div class="modal fade" id="modalSucesso" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Enviado com sucesso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Obrigado(a), <strong id="nomeSucesso"></strong>! Recebi sua mensagem e já já eu respondo.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-verde" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPE -->
+    <footer>
+        <p class="mb-0">Escócia - trabalho de Bootstrap</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

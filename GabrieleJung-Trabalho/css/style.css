@@ -1,0 +1,103 @@
+/* meu css do site da Escócia, por cima do bootstrap */
+
+/* cores que eu usei no site da primeira atividade (verdes) */
+:root {
+    --verde-escuro: rgb(8, 104, 72);
+    --verde-claro: rgb(26, 201, 142);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* botao verde (o do bootstrap é azul) */
+.btn-verde {
+    background-color: var(--verde-escuro);
+    border-color: var(--verde-escuro);
+    color: white;
+}
+
+.btn-verde:hover {
+    background-color: var(--verde-claro);
+    border-color: var(--verde-claro);
+    color: white;
+}
+
+/* links do menu */
+.navbar .nav-link:hover {
+    color: var(--verde-claro);
+}
+
+/* carrossel: altura fixa pra todas as fotos ficarem iguais */
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-caption h2 {
+    text-shadow: 3px 2px 8px black;
+}
+
+/* titulos verdes */
+.titulo {
+    color: var(--verde-escuro);
+}
+
+/* efeito de transicao no texto: aparece subindo */
+.aparecer {
+    animation: aparecer 1.2s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* cards dos lugares */
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* quando passa o mouse o card cresce um pouquinho */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+/* foto da parte sobre */
+.foto-sobre {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* abas verdes */
+.nav-tabs .nav-link {
+    color: var(--verde-escuro);
+}
+
+/* rodape */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* no celular o carrossel fica mais baixo */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
